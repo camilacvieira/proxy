@@ -23,7 +23,7 @@ class GerenteProxyTest {
     @Test
     void deveRetonarExcecaoUsuarioNaoAutorizadoConsultarDadosGerente() {
         try {
-            Funcionario funcionario = new Funcionario("Joana", false);
+            Funcionario funcionario = new Funcionario("Alice", false);
             GerenteProxy gerente = new GerenteProxy(2);
 
             gerente.obterFeedback(funcionario);

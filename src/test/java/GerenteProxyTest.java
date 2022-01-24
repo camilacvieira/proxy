@@ -9,15 +9,15 @@ class GerenteProxyTest {
 
     @BeforeEach
     void setUp() {
-        BD.addGerente(new Gerente(1, "João", "Juiz de Fora", 8.0f, 9.0f));
-        BD.addGerente(new Gerente(2, "Maria", "Juiz de Fora", 10.0f, 10.0f));
+        BD.addGerente(new Gerente(1, "Camila", "Juiz de Fora", 8.0f, 9.0f));
+        BD.addGerente(new Gerente(2, "Marina", "Juiz de Fora", 10.0f, 10.0f));
     }
 
     @Test
     void deveRetornarDadosPessoaisGerente() {
         GerenteProxy gerente = new GerenteProxy(1);
 
-        assertEquals(Arrays.asList("João", "Juiz de Fora"), gerente.obterDadosPessoais());
+        assertEquals(Arrays.asList("Camila", "Juiz de Fora"), gerente.obterDadosPessoais());
     }
 
     @Test
